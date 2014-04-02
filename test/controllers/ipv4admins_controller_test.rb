@@ -18,7 +18,7 @@ class Ipv4adminsControllerTest < ActionController::TestCase
 
   test "should create ipv4admin" do
     assert_difference('Ipv4admin.count') do
-      post :create, ipv4admin: { host: @ipv4admin.host, id: @ipv4admin.id, ip_address: @ipv4admin.ip_address, ip_status: @ipv4admin.ip_status, note: @ipv4admin.note, update_time: @ipv4admin.update_time }
+      post :create, ipv4admin: { host: @ipv4admin.host, ip_address: @ipv4admin.ip_address, ip_status: @ipv4admin.ip_status, note: @ipv4admin.note, update_time: @ipv4admin.update_time }
     end
 
     assert_redirected_to ipv4admin_path(assigns(:ipv4admin))
@@ -35,7 +35,7 @@ class Ipv4adminsControllerTest < ActionController::TestCase
   end
 
   test "should update ipv4admin" do
-    patch :update, id: @ipv4admin, ipv4admin: { host: @ipv4admin.host, id: @ipv4admin.id, ip_address: @ipv4admin.ip_address, ip_status: @ipv4admin.ip_status, note: @ipv4admin.note, update_time: @ipv4admin.update_time }
+    patch :update, id: @ipv4admin, ipv4admin: { host: @ipv4admin.host, ip_address: @ipv4admin.ip_address, ip_status: @ipv4admin.ip_status, note: @ipv4admin.note, update_time: @ipv4admin.update_time }
     assert_redirected_to ipv4admin_path(assigns(:ipv4admin))
   end
 
