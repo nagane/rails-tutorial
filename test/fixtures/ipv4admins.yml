@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
-  ip_status: 
+  id: 11
+  ip_status:
   ip_address: MyText
   host: MyText
   note: MyText
   update_time: 2014-03-29
 
 two:
-  id: 
+  id: 3
   ip_status: 
   ip_address: MyText
   host: MyText
