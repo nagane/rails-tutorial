@@ -18,3 +18,5 @@
 # add nagane
 
 config/database.yml
+*.swp
+.secret

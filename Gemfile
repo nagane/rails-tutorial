@@ -46,3 +46,9 @@ end
 
 gem 'therubyracer'
 gem 'web-app-theme'
+
+# rscec-test
+
+group :development, :test do
+  gem 'rspec-rails'
+end
