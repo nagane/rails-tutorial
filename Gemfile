@@ -51,4 +51,8 @@ gem 'web-app-theme'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
