@@ -46,3 +46,13 @@ end
 
 gem 'therubyracer'
 gem 'web-app-theme'
+
+# rscec-test
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+end

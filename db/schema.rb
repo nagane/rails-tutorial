@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330164911) do
+ActiveRecord::Schema.define(version: 20140407124855) do
 
   create_table "ipv4admins", force: true do |t|
     t.integer  "ip_status"
@@ -24,5 +24,19 @@ ActiveRecord::Schema.define(version: 20140330164911) do
   end
 
   add_index "ipv4admins", ["ip_address"], name: "index_ipv4admins_on_ip_address", using: :btree
+
+  create_table "microposts", force: true do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
