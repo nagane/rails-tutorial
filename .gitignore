@@ -16,7 +16,6 @@
 /tmp
 
 # add nagane
-*.swp
 config/database.yml
 *.swp
 .secret
