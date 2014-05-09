@@ -5,6 +5,8 @@ gemfile:
   - Gemfile
 env:
   - DB=mysql
+before_script:
+  - "cp config/database_travis.yml config/database.yml"
 script:
   - bundle install --standalone --clean
   - RAILS_ENV=test bundle exec rake --trace db:create
