@@ -1,17 +1,17 @@
 require 'spec_helper'
 
 describe "Static Pages" do
+  
+  # subjectを定義した事により
+  # should呼び出しは自動的にCapybaraにより提供されるpage変数を仕様する
+  subject { page }
 
   describe "Home page" do
+    before { visit root_path }
 
-    it "should have the content 'Sample App'" do
-      visit root_path  
-      expect(page).to have_content('Sample App')
-    end
-    it "should have the right title" do
-      visit root_path
-      expect(page).to have_title("Home")
-    end
+    it { should have_content('Sample App') }
+    it { should have_title("Home") }
+    it { should_not have_title("Sample App") }
   end
   
   describe "Help page" do
