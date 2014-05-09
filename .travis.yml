@@ -6,7 +6,6 @@ gemfile:
 env:
   - DB=mysql
 script:
-  - cd srvadmin
   - bundle install --standalone --clean
   - RAILS_ENV=test bundle exec rake --trace db:create
   - RAILS_ENV=test bundle exec rake --trace db:migrate
