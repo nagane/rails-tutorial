@@ -8,9 +8,7 @@ ServerAdmin::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
 
   resources :microposts
-
   resources :users
-
   resources :ipv4admins
 
   # The priority is based upon order of creation: first created -> highest priority.
