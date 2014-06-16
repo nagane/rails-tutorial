@@ -7,6 +7,7 @@
       <% @user.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
+      <%= render 'shared/error_messages' %>
       </ul>
     </div>
   <% end %>
