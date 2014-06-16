@@ -35,9 +35,6 @@
         <% end -%>
       </div>
       <div id="main">
-        <%= flash.each do |key, value| %>
-          <div class="alert alert-<%= key %>"><%= value %></dev>
-        <% end %>
         <%= yield %>
         <div id="footer">
           <div class="block">
