@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nagane/srvadmin.svg?branch=master)](https://travis-ci.org/nagane/srvadmin)
+[![Build Status](https://travis-ci.org/nagane/rails-tutorial.svg?branch=sign-up)](https://travis-ci.org/nagane/rails-tutorial)
 
 git clone
 
